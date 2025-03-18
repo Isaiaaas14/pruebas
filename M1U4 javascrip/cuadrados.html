@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cuadrados de colores</title>
+<style>
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+#cuadrado1 { background-color: red; }
+#cuadrado2 { background-color: blue; }
+#cuadrado3 { background-color: green; }
+</style>
+</head>
+<body>
+
+<div id="cuadrado1" class="cuadrado"></div>
+<div id="cuadrado2" class="cuadrado"></div>
+<div id="cuadrado3" class="cuadrado"></div>
+
+<script>
+const cuadrados = document.querySelectorAll('.cuadrado');
+
+cuadrados.forEach(cuadrado => {
+  cuadrado.addEventListener('click', function() {
+    document.body.style.backgroundColor = this.style.backgroundColor(red);
+  });
+});
+</script>
+
+</body>
+</html>

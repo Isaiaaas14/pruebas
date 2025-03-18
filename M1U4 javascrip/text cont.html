@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contador de caracteres</title>
+</head>
+<body>
+
+<textarea id="miTextarea" rows="4" cols="50"></textarea>
+<p>Caracteres: <span id="contador">0</span></p>
+
+<script>
+const textarea = document.getElementById('miTextarea');
+const contador = document.getElementById('contador');
+
+textarea.addEventListener('input', function() {
+  const longitud = textarea.value.length;
+  contador.textContent = longitud;
+});
+</script>
+
+</body>
+</html>
